@@ -26,7 +26,6 @@ async def calculate(ctx, *, eq):
         await ctx.send("Invalid equation.")
 
 
-# Aditya Sharma E22CSEU1348 Batch 45
 @client.command()
 async def show(ctx, *, val):
     title = val
@@ -42,8 +41,6 @@ async def show(ctx, *, val):
     else:
         await ctx.send("No image found.")
 
-
-# Priyanshu Gahlot E22CSEU1364 Batch 46
 @client.command()
 async def tictactoe(ctx):
     import random
@@ -340,8 +337,6 @@ async def tictactoe(ctx):
     yesOrNo = await client.wait_for("message", check=check)
     await play(yesOrNo.content)
 
-
-# Ananya Shrivastava E22CSEU0475 Batch 16
 @client.command(aliases=["stonepaperscissors"])
 async def sps(ctx):
     await ctx.send("GO!")
@@ -375,8 +370,6 @@ async def sps(ctx):
         elif (userTurn == "scissor"):
             await ctx.send("Its a TIE!😐")
 
-
-# Aannya Gupta E22CSEU0632 Batch 22
 @client.command()
 async def flipcoin(ctx):
     headsOrTails = random.choice(["HEADS", "TAILS"])
@@ -388,7 +381,6 @@ async def flipcoin(ctx):
     await ctx.send(embed=embed)
 
 
-# Saksham Gupta E22CSEU1338 Batch 45
 @client.command(aliases=["Pokemon"])
 async def pokemon(ctx, name):
     title = copy.copy(name.capitalize())
@@ -405,7 +397,6 @@ async def pokemon(ctx, name):
         await ctx.send("Wrong pokemon name.")
 
 
-# Ayush Pathak E22CSEU1356 Batch 46
 @client.command()
 async def quiz(ctx):
     def check(m):
@@ -500,4 +491,4 @@ async def commands(ctx):
     await ctx.send(embed=embed)
 
 
-client.run("<Your Bots Token>")
+client.run("<Your Bot's Token>")
